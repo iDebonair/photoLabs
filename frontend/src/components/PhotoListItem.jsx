@@ -19,26 +19,21 @@ const PhotoListItem = (props) => {
 
   console.log("testing PhotoListItem ", props);
   return (
-    <div className="photo-list-item">
+    <div className="photo-list__item">
       <PhotoFavButton
         displayAlert={displayAlert}
         selected={selected}
         onClick={handleFavIconClick}
       />
-      <div className="photo-list">
-        <div className="photo-list__image">
-          <img src={urls.regular} />
-        </div>
-        {/* <div className="photo-list__user-profile">
-            <img src = { profile } alt = "profile-picture" />
-          </div> */}
-        <div className="photo-list__user-details">
-          <div className="photo-list__user-info">
-            <div>{name}</div>
-            <div className="photo-list__user-location">
-              { location.city} ,{" "}
-              { location.country }
-            </div>
+      <img className="photo-list__image" src={urls.regular} />
+      
+      <div className="photo-list__user-details">
+        <img className="photo-list__user-profile" src = { profile } alt = "profile-picture" />
+        <div className="photo-list__user-info">
+          <div>{name}</div>
+          <div className="photo-list__user-location">
+            { location.city} ,{" "}
+            { location.country }
           </div>
         </div>
       </div>
