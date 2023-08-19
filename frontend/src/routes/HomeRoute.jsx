@@ -5,7 +5,6 @@ import '../styles/HomeRoute.scss';
 
 const HomeRoute = () => {
   const [favorites, setFavorites] = useState([]);
-  console.log("this is favorites", favorites)
   const toggleFavorite = (photoID) => {
     if (favorites.includes(photoID)) {
       const cloneFavorite = [...favorites];
@@ -21,7 +20,7 @@ const HomeRoute = () => {
   };
   return (
     <div className="home-route">
-      <TopNavigation />
+      <TopNavigation favorites={favorites}/>
       <PhotoList favorites={favorites} toggleFavorite={toggleFavorite} />
     </div>
   );

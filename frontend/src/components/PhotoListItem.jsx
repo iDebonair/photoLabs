@@ -8,17 +8,10 @@ const PhotoListItem = (props) => {
   const { name, profile } = props.data;
   const location = props.location;
   const urls = props.urls;
-
-  // const [selected, setSelected] = useState(false);
-  // const [displayAlert, setDisplayAlert] = useState(false);
-
   const handleFavIconClick = () => {
-    // setSelected(!selected);
-    // setDisplayAlert(true);
     props.toggleFavorite(props.photoID);
   };
   const selected = props.favorites.includes(props.photoID);
-  console.log("testing PhotoListItem ", props);
   return (
     <div className="photo-list__item">
       <PhotoFavButton
