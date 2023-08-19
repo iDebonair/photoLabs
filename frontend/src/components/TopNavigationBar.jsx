@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles/TopNavigationBar.scss';
 import TopicList from './TopicList';
 import FavBadge from './FavBadge';
-import FavIcon from './FavIcon';
 
 const TopNavigation = ({ favorites }) => {
   return (

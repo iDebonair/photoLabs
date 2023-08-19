@@ -12,7 +12,8 @@
 }
 
 .similar-pictures-container {
-  color:aqua;
+  border: 5px;
+  color:black;
 }
 .photo-details-modal__close-button {
   background-color: white;
@@ -35,6 +36,7 @@
 .photo-details-modal__image {
   max-width: 95%;
   border-radius: 8px;
+  align-items: center;
 }
 
 .photo-details-modal__top-bar {

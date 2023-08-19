@@ -156,7 +156,7 @@ const photo9 = {
   "user": {
     "id": "9",
     "username": "exampleuser",
-    "name": "Joe Example",
+    "name": "Femi Example",
     "profile": `${process.env.PUBLIC_URL}/profile-1.jpg`
   }
 };
@@ -174,7 +174,7 @@ const photo10 = {
   "user": {
     "id": "10",
     "username": "exampleuser",
-    "name": "Joe Example",
+    "name": "John Example",
     "profile": `${process.env.PUBLIC_URL}/profile-1.jpg`
   }
 };
