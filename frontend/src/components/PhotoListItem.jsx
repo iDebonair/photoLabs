@@ -10,24 +10,32 @@ const PhotoListItem = (props) => {
   const urls = props.urls;
   const handleFavIconClick = () => {
     props.toggleFavorite(props.photoID);
+    
   };
-  const selected = props.favorites.includes(props.photoID);
+  const selected = props.favorites && props.favorites.includes(props.photoID);
+
   return (
     <div className="photo-list__item">
       <PhotoFavButton
         displayAlert={selected}
         selected={selected}
-        onClick={handleFavIconClick}
+        onClick={() => {
+          handleFavIconClick();
+        }}
       />
-      <img className="photo-list__image" src={urls.regular} />
-      
+      <img
+        className="photo-list__image"
+        src={urls.regular}
+        onClick={() => props.openModal()} // Open modal with full URL
+      />
+
       <div className="photo-list__user-details">
-        <img className="photo-list__user-profile" src = { profile } alt = "profile-picture" />
+        <img className="photo-list__user-profile" src={profile} alt="profile-picture" />
         <div className="photo-list__user-info">
           <div>{name}</div>
           <div className="photo-list__user-location">
-            { location.city} ,{" "}
-            { location.country }
+            {location.city} ,{" "}
+            {location.country}
           </div>
         </div>
       </div>
