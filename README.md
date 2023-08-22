@@ -10,8 +10,14 @@ User can also view the larger version of the picture that interest them and they
 
 User can also like pictures in the application which will show them in the top bar if there is liked photo.
 
-All photos
-photolabs-starter/frontend/src/screen_shots/all pictures.png
+![All photos]
+(https://github.com/iDebonair/photoLabs/blob/main/docs/all%20pictures.png?raw=true)
+
+![Photo Modal]
+(https://github.com/iDebonair/photoLabs/blob/main/docs/photo%20modal.png?raw=true)
+
+![Similar Photos]
+(https://github.com/iDebonair/photoLabs/blob/main/docs/similar%20photos.png?raw=true)
 
 ## Setup
 
