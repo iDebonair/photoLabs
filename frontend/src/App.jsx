@@ -5,11 +5,15 @@ import PhotoDetailsModal from './routes/PhotoDetailsModal';
 import useApplicationData from 'hooks/useApplicationData';
 
 const App = () => {
-  const {toggleFavorite,openModal,closeModal,state} = useApplicationData();
+  const { toggleFavorite, openModal, closeModal, state, getPhotosByTopic } = useApplicationData();
+
   return (
     <div className="App">
       <HomeRoute
+        photoData={state.photoData}
+        topicData={state.topicData}
         openModal={openModal}
+        getPhotosByTopic={getPhotosByTopic}
         toggleFavorite={toggleFavorite} // Pass toggleFavorite to HomeRoute
         favorites={state.favorites} // Pass favorites to HomeRoute. be sure that it is operatin properly
       />
