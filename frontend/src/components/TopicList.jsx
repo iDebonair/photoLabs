@@ -11,8 +11,6 @@ const TopicList = (props) => {
           key={topic.id}
           title={topic.title}
           onClick={() => props.handleTopicClick(topic.id)}
-          //handleTopicClick={props.handleTopicClick(topic.id)}
-          
         />
       ))}
     </div>

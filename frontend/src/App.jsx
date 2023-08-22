@@ -15,7 +15,7 @@ const App = () => {
         openModal={openModal}
         getPhotosByTopic={getPhotosByTopic}
         toggleFavorite={toggleFavorite} // Pass toggleFavorite to HomeRoute
-        favorites={state.favorites} // Pass favorites to HomeRoute. be sure that it is operatin properly
+        favorites={state.favorites} // Pass favorites to HomeRoute
       />
 
       {state.isModalOpen && (
