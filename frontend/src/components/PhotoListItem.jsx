@@ -26,7 +26,7 @@ const PhotoListItem = (props) => {
       <img
         className="photo-list__image"
         src={urls.regular}
-        onClick={() => props.openModal()} // Open modal with full URL
+        onClick={props.openModal ? () => props.openModal() : undefined} // Open modal with full URL
       />
 
       <div className="photo-list__user-details">

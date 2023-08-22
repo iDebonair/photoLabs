@@ -15,7 +15,7 @@ const PhotoList = (props) => {
             data={photo.user}
             location={photo.location}
             urls={photo.urls}
-            openModal={() => props.openModal(photo)}
+            openModal={props.openModal ? () => props.openModal(photo) : undefined}
             setFavorites={props.setFavorites}
           />
         ))}

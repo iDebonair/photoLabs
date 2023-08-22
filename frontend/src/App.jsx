@@ -24,6 +24,7 @@ const App = () => {
           toggleFavorite={toggleFavorite} // Pass toggleFavorite to the modal
           favorites={state.favorites} // Pass favorites to the modal
           photo={state.selectedPhoto}
+          openModal={openModal}
         />
       )}
     </div>
